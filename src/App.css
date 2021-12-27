@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f5efe8;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +22,21 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.output {
+  display: flex;
+  background-color: white;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 50px;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: black;
+  font-size: 20px;
 }
 
 .App-link {
