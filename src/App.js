@@ -22,6 +22,8 @@ const Styles = makeStyles({
   }
 });
 
+
+
 function App() {
 
   const classes = Styles();
@@ -31,8 +33,9 @@ function App() {
   const buttons= [];
 
 
-
   const handleClick = (value) => {
+    try{
+
     if(document.getElementById("display").innerHTML ==="0"){
       document.getElementById("display").innerHTML = "";
     }
@@ -48,11 +51,16 @@ function App() {
       // eslint-disable-next-line
       document.getElementById("display").innerHTML = eval(document.getElementById("display").innerHTML);
     }else if (value === "∞"){
+      
       alert("meow meow")
       document.getElementById("display").innerHTML = "0";
         }else{
       alert("something went wrong");
     }
+  }
+  catch(err){
+    document.getElementById("display").innerHTML = "Error";
+  }
   };
 
   for(const[index, value] of buttonsTag.entries()) {
